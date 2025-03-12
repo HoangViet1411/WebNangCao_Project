@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Input } from 'antd';
-import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrapperHeaderCart, WrapperHeaderRight} from './style';
+import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrapperHeaderCart, WrapperHeaderRight, WrapperSearch, WrapperTextHeaderSmall} from './style';
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 import {
   HomeOutlined,
   LoadingOutlined,
@@ -26,11 +27,13 @@ const HeaderComponent = () => {
         <WrapperTextHeader>LAPTOP</WrapperTextHeader>
       </Col>
       <Col span={12}>
-      <Search 
-        placeholder="input search text" 
-        onSearch={onSearch}  
-        enterButton 
-      />
+          <ButtonInputSearch
+          size = "large"
+          textButton = "Tìm kiếm"
+          placeholder ="Search"
+          onSearch={onSearch}  
+          enterButton
+          />
       </Col>
       <Col span={6}>
         <WrapperHeaderRight>
@@ -40,9 +43,9 @@ const HeaderComponent = () => {
           <WrapperHeaderAccount>
             <UserOutlined style={{fontSize: '20px'}} />
             <div>
-              <span>Đăng nhập/Đăng ký</span>
+              <WrapperTextHeaderSmall>Đăng nhập/Đăng ký</WrapperTextHeaderSmall>
               <div>
-                <span>Tài Khoản</span>
+              <WrapperTextHeaderSmall>Tài Khoản</WrapperTextHeaderSmall>
                 <CaretDownOutlined />
               </div>
             </div>

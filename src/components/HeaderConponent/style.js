@@ -15,6 +15,8 @@ export const WrapperTextHeader = styled.span `
     font-size: 18px;
     font-weight: bold;
     text-align: left;
+    gap: 16px;
+    flex-wrap: nowrap;
 `
 
 export const WrapperHeaderRight = styled.div`
@@ -39,3 +41,8 @@ export const WrapperHeaderAccount = styled.div`
     cursor: pointer;
 `;
 
+export const WrapperTextHeaderSmall = styled.div`
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+`;
