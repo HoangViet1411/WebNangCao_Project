@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Card } from 'antd';
 
 export const StyleNameProduct = styled.div`
     font-weight: 400;
@@ -6,6 +7,19 @@ export const StyleNameProduct = styled.div`
     line-height: 16px;
     color: rgb(56, 56, 61);
 `;
+
+export const WrapperCardStyle = styled(Card)`
+    width: 200px;
+
+    & img {
+        height: 200px;
+        width: 200px;
+    }
+
+    position: relative;
+`;
+
+
 
 export const WrapperReporText = styled.div`
     font-size: 12px;
